@@ -12,16 +12,16 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nikkah Invitation - Khadeeja & Savad" },
+      { title: "Nikkah Invitation - Savad and Khadeeja" },
       {
         name: "description",
         content:
-          "Wedding celebration of Khadeeja Abdul Shukkoor & Mohamed Savad — 24 January 2027.",
+          "Wedding celebration of Mohamed Savad & Khadeeja Abdul Shukkoor — 24 January 2027.",
       },
-      { property: "og:title", content: "Nikkah Invitation - Khadeeja & Savad" },
+      { property: "og:title", content: "Nikkah Invitation - Savad and Khadeeja" },
       {
         property: "og:description",
-        content: "Wedding celebration of Khadeeja Abdul Shukkoor & Mohamed Savad.",
+        content: "Wedding celebration of Mohamed Savad & Khadeeja Abdul Shukkoor.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/og-image.png" },

@@ -78,12 +78,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Flowers in the Breeze" },
-      { name: "description", content: "A gently animated watercolor floral garden." },
-      { property: "og:title", content: "Flowers in the Breeze" },
-      { property: "og:description", content: "A gently animated watercolor floral garden." },
+      { title: "Nikkah Invitation - Savad and Khadeeja" },
+      {
+        name: "description",
+        content:
+          "Wedding celebration of Mohamed Savad & Khadeeja Abdul Shukkoor — 24 January 2027.",
+      },
+      { property: "og:title", content: "Nikkah Invitation - Savad and Khadeeja" },
+      {
+        property: "og:description",
+        content: "Wedding celebration of Mohamed Savad & Khadeeja Abdul Shukkoor.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
