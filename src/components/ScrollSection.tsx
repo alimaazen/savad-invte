@@ -41,7 +41,9 @@ const ScrollSection = ({
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
       className={cn(
-        "min-h-[85vh] w-full flex flex-col items-center justify-center py-16 px-4 relative overflow-visible transition-all duration-1200 ease-out",
+        isFirst
+          ? "min-h-[100svh] w-full flex flex-col items-center justify-center pt-28 pb-14 sm:pt-36 sm:pb-16 px-4 relative overflow-visible transition-all duration-1200 ease-out"
+          : "min-h-[92vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-16 px-4 relative overflow-visible transition-all duration-1200 ease-out",
         isVisible ? "opacity-100 blur-0 scale-100 translate-y-0" : "opacity-0 translate-y-12",
         className,
       )}

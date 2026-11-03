@@ -64,10 +64,10 @@ const CountdownTimer = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
         >
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-[0_8px_25px_rgba(40,54,24,0.08)] px-4 py-5 min-[360px]:px-5 min-[360px]:py-6 sm:px-6 sm:py-7 border border-[#7B8F62]/35 w-full flex items-center justify-center">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-[0_8px_25px_rgba(85,65,35,0.08)] px-4 py-5 min-[360px]:px-5 min-[360px]:py-6 sm:px-6 sm:py-7 border border-[#CBB282]/40 w-full flex items-center justify-center">
             <motion.span
               key={block.value}
-              className="text-3xl min-[360px]:text-4xl sm:text-5xl text-[#243315] leading-none font-bold"
+              className="text-3xl min-[360px]:text-4xl sm:text-5xl text-[#382918] leading-none font-bold"
               style={{ fontFamily: "'Cinzel', serif", fontWeight: 700 }}
               initial={{ scale: 1.15, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -78,7 +78,7 @@ const CountdownTimer = () => {
             </motion.span>
           </div>
           <p
-            className="text-[8px] min-[360px]:text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#556C38] font-serif font-bold mt-2"
+            className="text-[8px] min-[360px]:text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#8C6C38] font-serif font-bold mt-2"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
           >
             {block.label}

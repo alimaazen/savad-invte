@@ -12,16 +12,16 @@ export function ScrollIndicator() {
       <motion.div
         animate={{ y: [0, 5, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#384A22]/90 backdrop-blur-sm border border-[#F4F6EE]/35 shadow-lg"
+        className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7D6132]/90 backdrop-blur-sm border border-[#FAF4E8]/35 shadow-lg"
       >
-        <ChevronDown className="w-3 h-3 text-[#F4F6EE]" />
+        <ChevronDown className="w-3 h-3 text-[#FAF4E8]" />
         <span
-          className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#F4F6EE]"
+          className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#FAF4E8]"
           style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
         >
           Scroll Down
         </span>
-        <ChevronDown className="w-3 h-3 text-[#F4F6EE]" />
+        <ChevronDown className="w-3 h-3 text-[#FAF4E8]" />
       </motion.div>
     </motion.div>
   );

@@ -90,9 +90,9 @@ const NikkahCard = () => {
       {/* The Main Ornate French Notched Card Container */}
       <div
         ref={containerRef}
-        className="relative w-full filter drop-shadow-[0_10px_28px_rgba(40,54,24,0.12)] font-bold"
+        className="relative w-full filter drop-shadow-[0_10px_28px_rgba(85,65,35,0.12)] font-bold"
       >
-        {/* Dynamic 1:1 Vector SVG Background Frame with Olive Tint Shade */}
+        {/* Dynamic 1:1 Vector SVG Background Frame with Champagne Tint Shade */}
         <svg
           className="absolute inset-0 w-full h-full pointer-events-none z-0"
           width={w}
@@ -101,18 +101,18 @@ const NikkahCard = () => {
         >
           <defs>
             <linearGradient id="cardParchmentGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#F8FAF4" stopOpacity="0.85" />
-              <stop offset="50%" stopColor="#F3F7EE" stopOpacity="0.85" />
-              <stop offset="100%" stopColor="#ECF2E6" stopOpacity="0.85" />
+              <stop offset="0%" stopColor="#FDFCF9" stopOpacity="0.9" />
+              <stop offset="50%" stopColor="#F9F5EC" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#F2EADC" stopOpacity="0.9" />
             </linearGradient>
             <linearGradient id="goldBorderGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#9DB087" />
-              <stop offset="50%" stopColor="#7A9362" />
-              <stop offset="100%" stopColor="#556C38" />
+              <stop offset="0%" stopColor="#ECD9B4" />
+              <stop offset="50%" stopColor="#CBA768" />
+              <stop offset="100%" stopColor="#9C7736" />
             </linearGradient>
           </defs>
 
-          {/* Outer French Notched Frame Fill & Olive Stroke */}
+          {/* Outer French Notched Frame Fill & Champagne Gold Stroke */}
           <path
             d={outerPath}
             fill="url(#cardParchmentGrad)"
@@ -121,14 +121,14 @@ const NikkahCard = () => {
           />
 
           {/* Inner Parallel French Notched Stroke with Matching Corner Curves */}
-          <path d={innerPath} fill="none" stroke="#A8BD92" strokeWidth="1" strokeOpacity="0.85" />
+          <path d={innerPath} fill="none" stroke="#D8C39D" strokeWidth="1" strokeOpacity="0.85" />
         </svg>
 
         {/* Content Container - Compact and Elegantly Balanced */}
         <div className="relative z-10 px-4 pt-4 pb-3.5 min-[360px]:pt-5 min-[360px]:pb-4 text-center flex flex-col items-center font-bold">
           {/* Header Title: Nikkah in Flowing Wedding Script */}
           <h3
-            className="text-4xl min-[360px]:text-[44px] sm:text-5xl text-[#3A4E26] leading-tight mb-2 select-none font-bold"
+            className="text-4xl min-[360px]:text-[44px] sm:text-5xl text-[#8C6C38] leading-tight mb-2 select-none font-bold"
             style={{ fontFamily: "'Great Vibes', cursive", fontWeight: 700 }}
           >
             Nikkah
@@ -139,13 +139,13 @@ const NikkahCard = () => {
             {/* Left Column: SUNDAY / الأحد */}
             <div className="text-center flex flex-col items-center justify-center flex-1 min-w-0">
               <span
-                className="text-xs min-[360px]:text-sm tracking-[0.18em] uppercase text-[#3A4E26] font-bold whitespace-nowrap block text-center"
+                className="text-xs min-[360px]:text-sm tracking-[0.18em] uppercase text-[#8C6C38] font-bold whitespace-nowrap block text-center"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
               >
                 Sunday
               </span>
               <span
-                className="text-base min-[360px]:text-lg text-[#556C38] mt-1 whitespace-nowrap block font-bold text-center"
+                className="text-base min-[360px]:text-lg text-[#A88D5C] mt-1 whitespace-nowrap block font-bold text-center"
                 style={{ fontFamily: "'Reem Kufi', 'Amiri', serif", fontWeight: 700 }}
                 dir="rtl"
                 lang="ar"
@@ -155,12 +155,12 @@ const NikkahCard = () => {
             </div>
 
             {/* Vertical Divider */}
-            <div className="h-12 min-[360px]:h-14 w-px shrink-0 bg-[#7A9362]/40" />
+            <div className="h-12 min-[360px]:h-14 w-px shrink-0 bg-[#CBB282]/45" />
 
             {/* Middle: 24 */}
             <div className="flex items-center justify-center w-14 min-[360px]:w-16 shrink-0">
               <span
-                className="text-5xl min-[360px]:text-6xl sm:text-[60px] text-[#243315] leading-none font-serif font-extrabold"
+                className="text-5xl min-[360px]:text-6xl sm:text-[60px] text-[#382918] leading-none font-serif font-extrabold"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 800 }}
               >
                 24
@@ -168,18 +168,18 @@ const NikkahCard = () => {
             </div>
 
             {/* Vertical Divider */}
-            <div className="h-12 min-[360px]:h-14 w-px shrink-0 bg-[#7A9362]/40" />
+            <div className="h-12 min-[360px]:h-14 w-px shrink-0 bg-[#CBB282]/45" />
 
             {/* Right Column: JANUARY / 2027 */}
             <div className="text-center flex flex-col items-center justify-center flex-1 min-w-0">
               <span
-                className="text-xs min-[360px]:text-sm tracking-[0.18em] uppercase text-[#3A4E26] font-bold whitespace-nowrap block text-center"
+                className="text-xs min-[360px]:text-sm tracking-[0.18em] uppercase text-[#8C6C38] font-bold whitespace-nowrap block text-center"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
               >
                 January
               </span>
               <span
-                className="text-sm min-[360px]:text-base tracking-[0.2em] text-[#556C38] mt-1 whitespace-nowrap block font-bold text-center"
+                className="text-sm min-[360px]:text-base tracking-[0.2em] text-[#A88D5C] mt-1 whitespace-nowrap block font-bold text-center"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
               >
                 2027
@@ -189,9 +189,9 @@ const NikkahCard = () => {
 
           {/* Ornamental Divider with Botanical Centerpiece */}
           <div className="flex items-center justify-center gap-2 w-full max-w-[210px] mx-auto my-1.5 min-[360px]:my-2">
-            <div className="flex-1 h-[1px] bg-[#7A9362]/35" />
+            <div className="flex-1 h-[1px] bg-[#CBB282]/45" />
             <svg
-              className="w-3.5 h-3 text-[#556C38] shrink-0 opacity-90"
+              className="w-3.5 h-3 text-[#A88D5C] shrink-0 opacity-90"
               viewBox="0 0 24 20"
               fill="currentColor"
             >
@@ -200,13 +200,13 @@ const NikkahCard = () => {
               <path d="M20 11C20 11 17 8 14 10C14.5 11.5 15.5 12.5 17.5 12.5C19 12.5 20 11 20 11Z" />
               <circle cx="12" cy="14" r="1.5" />
             </svg>
-            <div className="flex-1 h-[1px] bg-[#7A9362]/35" />
+            <div className="flex-1 h-[1px] bg-[#CBB282]/45" />
           </div>
 
           {/* Islamic Hijri Date */}
           <div className="flex flex-col items-center gap-0.5 my-0.5 font-bold">
             <p
-              className="text-sm min-[360px]:text-[15px] text-[#3A4E26] font-bold tracking-wide"
+              className="text-sm min-[360px]:text-[15px] text-[#8C6C38] font-bold tracking-wide"
               style={{ fontFamily: "'Amiri', 'Aref Ruqaa', serif", fontWeight: 700 }}
               dir="rtl"
               lang="ar"
@@ -214,7 +214,7 @@ const NikkahCard = () => {
               ١٦ شعبان ١٤٤٨ هـ
             </p>
             <p
-              className="text-[9px] min-[360px]:text-[10px] tracking-[0.16em] uppercase text-[#556C38] font-bold"
+              className="text-[9px] min-[360px]:text-[10px] tracking-[0.16em] uppercase text-[#9E8252] font-bold"
               style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
             >
               16 Shaʿbān 1448 AH
@@ -222,15 +222,15 @@ const NikkahCard = () => {
           </div>
 
           {/* Bottom Badge: Pill with 6:30 PM */}
-          <div className="mt-3 inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-[#ECF2E4]/85 border border-[#B3C79E] shadow-[0_2px_8px_rgba(40,54,24,0.06)] backdrop-blur-sm">
-            <span className="text-[#556C38] text-[10px]">✤</span>
+          <div className="mt-3 inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-[#F5EDE0]/90 border border-[#D5C09B] shadow-[0_2px_8px_rgba(85,65,35,0.06)] backdrop-blur-sm">
+            <span className="text-[#A88D5C] text-[10px]">✤</span>
             <span
-              className="text-[11px] min-[360px]:text-xs tracking-[0.2em] font-bold uppercase text-[#243315]"
+              className="text-[11px] min-[360px]:text-xs tracking-[0.2em] font-bold uppercase text-[#382918]"
               style={{ fontFamily: "'Cinzel', serif", fontWeight: 700 }}
             >
               6:30 PM
             </span>
-            <span className="text-[#556C38] text-[10px]">✤</span>
+            <span className="text-[#A88D5C] text-[10px]">✤</span>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import envelopeVideo from "@/assets/Burgundy_Seal_Envelope_White.mp4";
+import envelopeVideo from "@/assets/ChampagneEnvelope.mp4";
 
 interface EnvelopeProps {
   onOpen: () => void;

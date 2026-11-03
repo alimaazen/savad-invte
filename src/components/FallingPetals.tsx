@@ -49,8 +49,8 @@ const FallingPetals = () => {
           <svg width={petal.size} height={petal.size} viewBox="0 0 24 24" fill="none">
             <path
               d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z"
-              fill="#D7E3C8"
-              opacity="0.8"
+              fill="#F4ECD8"
+              opacity="0.85"
             />
           </svg>
         </div>

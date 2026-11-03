@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import download30 from "@/assets/download (30).jpg";
+import download31 from "@/assets/download (31).jpg";
+import flowersTop3d from "@/assets/flowers_top_3d.png";
+import flowersBottom3d from "@/assets/flowers_bottom_3d.png";
 import FallingPetals from "@/components/FallingPetals";
 import ScrollInvitation from "@/components/ScrollInvitation";
 import { Envelope } from "@/components/Envelope";
@@ -44,8 +46,8 @@ function Index() {
   }, [isOpened]);
 
   return (
-    <div className="min-h-screen w-full bg-[#12180E] flex justify-center items-start overflow-x-hidden">
-      <main className="relative min-h-screen w-full max-w-[430px] mx-auto bg-[#FAFBF7] sm:shadow-[0_0_70px_rgba(0,0,0,0.45)] sm:border-x sm:border-[#7A8E63]/25 overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#181410] flex justify-center items-start overflow-x-hidden">
+      <main className="relative min-h-screen w-full max-w-[430px] mx-auto bg-[#FCFAF5] sm:shadow-[0_0_70px_rgba(0,0,0,0.45)] sm:border-x sm:border-[#CBB282]/30 overflow-x-hidden">
         {/* 0. Envelope (z-[100]) - strictly locked to mobile portrait frame */}
         <Envelope isOpen={isOpened} onOpen={() => setIsOpened(true)} />
 
@@ -57,9 +59,9 @@ function Index() {
         {/* 1. Fixed stationary background (z-0) - locked to mobile frame */}
         <div className="fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] h-full z-0 pointer-events-none overflow-hidden">
           <img
-            className="w-full h-full object-cover"
-            src={download30}
-            alt="Botanical Olive Watercolor Background"
+            className="w-full h-full object-cover object-top"
+            src={download31}
+            alt="Champagne Floral Watercolor Background"
           />
         </div>
 
@@ -78,9 +80,34 @@ function Index() {
             isOpened ? "opacity-100" : "opacity-0"
           } transition-opacity duration-1500`}
           role="img"
-          aria-label="Olive botanical falling petals"
+          aria-label="Champagne falling petals"
         >
           <FallingPetals />
+        </div>
+
+        {/* 4. Fixed 3D foreground floral overlays (z-30) - components scroll underneath this! */}
+        <div
+          className={`fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] h-full pointer-events-none z-30 overflow-hidden ${
+            isOpened ? "opacity-100" : "opacity-0"
+          } transition-opacity duration-1500`}
+        >
+          {/* Top 3D Floral Garland */}
+          <div className="absolute top-0 left-0 w-full pointer-events-none drop-shadow-[0_12px_24px_rgba(75,55,25,0.22)]">
+            <img
+              src={flowersTop3d}
+              alt=""
+              className="w-full h-auto object-contain block pointer-events-none select-none"
+            />
+          </div>
+
+          {/* Bottom 3D Floral Garland */}
+          <div className="absolute bottom-0 left-0 w-full pointer-events-none drop-shadow-[0_-10px_20px_rgba(75,55,25,0.18)]">
+            <img
+              src={flowersBottom3d}
+              alt=""
+              className="w-full h-auto object-contain block pointer-events-none select-none"
+            />
+          </div>
         </div>
       </main>
     </div>

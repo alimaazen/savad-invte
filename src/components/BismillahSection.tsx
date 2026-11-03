@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import newBismillahImg from "@/assets/newBismillah.png";
+import caramelBismillahImg from "@/assets/caramelBismillah.png";
 
 export const BismillahSection = () => {
   return (
@@ -7,17 +7,14 @@ export const BismillahSection = () => {
       <div className="text-center max-w-lg px-3 mx-auto">
         {/* Bismillah Calligraphy */}
         <img
-          src={newBismillahImg}
+          src={caramelBismillahImg}
           alt="Bismillah Calligraphy"
-          className="w-full max-w-[270px] min-[360px]:max-w-[310px] mx-auto h-auto drop-shadow-sm"
-          style={{
-            filter: "sepia(0.85) hue-rotate(50deg) saturate(1.8) brightness(0.65)",
-          }}
+          className="w-full max-w-[340px] min-[360px]:max-w-[380px] mx-auto h-auto drop-shadow-sm"
         />
 
         {/* English Translation */}
         <p
-          className="mt-4 text-[#3A4E26] text-[10px] min-[360px]:text-[11px] min-[400px]:text-xs md:text-sm font-semibold tracking-wide"
+          className="mt-4 text-[#8C6C38] text-[10.5px] min-[360px]:text-[11.5px] min-[400px]:text-xs md:text-sm font-semibold tracking-wide whitespace-nowrap"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           In the name of Allah, the Most Gracious, the Most Merciful
@@ -25,7 +22,7 @@ export const BismillahSection = () => {
 
         {/* Invitation Cordial Message */}
         <p
-          className="mt-5 text-[10px] min-[360px]:text-[11px] md:text-xs text-[#52653B] italic max-w-[280px] sm:max-w-xs mx-auto leading-relaxed tracking-wide"
+          className="mt-5 text-[10px] min-[360px]:text-[11px] md:text-xs text-[#6E5637] italic max-w-[280px] sm:max-w-xs mx-auto leading-relaxed tracking-wide"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           We cordially invite your esteemed presence on the auspicious occasion of the nikkah

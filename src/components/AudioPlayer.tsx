@@ -73,16 +73,16 @@ export function AudioPlayer({ autoPlayTrigger: _autoPlayTrigger = true }: AudioP
     <div className="fixed top-4 right-4 z-[120] pointer-events-auto">
       <button
         onClick={togglePlay}
-        className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#F8FAF4]/90 backdrop-blur-md border border-[#7B8F62]/35 shadow-md text-[#384A22] hover:bg-[#F3F7ED] transition-all duration-300 ${
-          isPlaying ? "ring-2 ring-[#7B8F62]/50 animate-pulse" : ""
+        className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#FCFAF5]/90 backdrop-blur-md border border-[#CBB282]/40 shadow-md text-[#54412B] hover:bg-[#F7F2E7] transition-all duration-300 ${
+          isPlaying ? "ring-2 ring-[#CBB282]/50 animate-pulse" : ""
         }`}
         title={isPlaying ? "Mute Background Music" : "Play Background Music"}
         aria-label={isPlaying ? "Mute Background Music" : "Play Background Music"}
       >
         {isPlaying ? (
-          <Volume2 className="w-4 h-4 text-[#384A22]" />
+          <Volume2 className="w-4 h-4 text-[#8C6C38]" />
         ) : (
-          <VolumeX className="w-4 h-4 text-[#7B8F62]/70" />
+          <VolumeX className="w-4 h-4 text-[#A88D5C]/70" />
         )}
       </button>
     </div>
